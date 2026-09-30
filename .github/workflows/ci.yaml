@@ -1,0 +1,14 @@
+name: My_Testing_CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout into repo
+        uses: actions/checkout@v2
